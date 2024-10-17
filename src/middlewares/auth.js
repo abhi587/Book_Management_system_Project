@@ -7,7 +7,7 @@ const { default: mongoose } = require('mongoose');
 
 const authentication = async function (req, res, next) {
     const token = req.headers["x-api-key"];
-    const secretKey = "project3group21";
+    const secretKey = "WorldBookManagement";
 
     if (!token) {
         return res

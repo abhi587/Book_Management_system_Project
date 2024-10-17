@@ -215,7 +215,7 @@ const userLogin = async function (req, res) {
 
         const userID = loginUser._id;
         const payLoad = { userId: userID };
-        const secretKey = "project3group21";
+        const secretKey = "WorldBookManagement";
 
         // creating JWT
         const token = jwt.sign(payLoad, secretKey, { expiresIn: "5000s" });
